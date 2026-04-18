@@ -4,6 +4,21 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- GitHub Pages SPA redirect handler -->
+    <script>
+      (function() {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+        var p = new URLSearchParams(location.search).get('p');
+        if (p) {
+          history.replaceState(null, null, p);
+        }
+      })();
+    </script>
+
     <!-- Edit meta tags for SEO -->
     <title>Dandi Diputra Portfolio</title>
     <meta name="title" content="Dandi Diputra Portfolio">

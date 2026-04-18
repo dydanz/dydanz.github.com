@@ -69,6 +69,11 @@
   }
 }
 
+.blog-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Blog Cards */
 .blog-card {
   background: $textColorDark;
