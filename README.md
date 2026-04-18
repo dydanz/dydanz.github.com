@@ -1,26 +1,19 @@
-# Embedded Software Developer Portfolio ⚡️ [![GitHub](https://img.shields.io/github/license/Eslam-Abdo/Eslam-Abdo.github.io?color=blue)](https://github.com/Eslam-Abdo/Eslam-Abdo.github.io/blob/master/LICENSE) [![GitHub stars](https://img.shields.io/github/stars/Eslam-Abdo/Eslam-Abdo.github.io)](https://github.com/Eslam-Abdo/Eslam-Abdo.github.io/stargazers)  
+# Software Engineer Portfolio ⚡️ [![GitHub](https://img.shields.io/github/license/dydanz/dydanz.github.io?color=blue)](https://github.com/dydanz/dydanz.github.io/blob/master/LICENSE) [![GitHub stars](https://img.shields.io/github/stars/dydanz/dydanz.github.io)](https://github.com/dydanz/dydanz.github.io/stargazers)  
 
 ## A clean, beautiful and responsive portfolio template for Developers!
-
-## Light Mode
-<p align="center">
-  <kbd>
-    <img src="Eslam-Abdo.gif"></img>
-  </kbd>
-</p>
 
 ## Dark Mode
 <p align="center">
   <kbd>
-    <img src="Eslam-Abdo_dark.gif"></img>
+    <img src="dark.gif"></img>
   </kbd>
 </p>
 
 Just change `src/portfolio.js` to get your personal portfolio. Customize portfolio theme by using your own color scheme globally in the  `src/_globalColor.scss` file. Feel free to use it as-is or personalize it as much as you want.
 
-If you'd like to **contribute** and make this much better for other users, have a look at [Issues](https://github.com/Eslam-Abdo/Eslam-Abdo.github.io/issues).
+If you'd like to **contribute** and make this much better for other users, have a look at [Issues](https://github.com/dydanz/dydanz.github.io/issues).
 
-Created something awesome for your fork of the portfolio and want to share it? Feel free to open a [pull request](https://github.com/Eslam-Abdo/Eslam-Abdo.github.io/pulls).
+Created something awesome for your fork of the portfolio and want to share it? Feel free to open a [pull request](https://github.com/dydanz/dydanz.github.io/pulls).
 
 ## Table of Contents
 - [Sections](#sections)
@@ -53,7 +46,7 @@ Created something awesome for your fork of the portfolio and want to share it? F
 ✔️ Twitter Timeline\
 ✔️ GitHub Profile -->
 
-To view a live example, **[click here](https://eslam-abdo.github.io/)**.
+To view a live example, **[click here](https://dydanz.github.io/)**.
 
 
 ## Getting Started
@@ -81,10 +74,10 @@ From your command line, clone and run developerFolio:
 
 ```bash
 # Clone this repository
-git clone https://github.com/Eslam-Abdo/Eslam-Abdo.github.io.git 
+git clone https://github.com/dydanz/dydanz.github.io.git 
 
 # Go into the repository
-cd Eslam-Abdo.github.io
+cd dydanz.github.io
 
 # Setup default environment variables
 
@@ -109,7 +102,7 @@ Generate a GitHub personal access token following these [instructions](https://h
 Note: Configuring environment variables before deploying your portfolio is highly recommended as some components depend on API data. 
 
 ```bash
-- Eslam-Abdo.github.io
+- dydanz.github.io
   - node_modules
   - public
   - src
@@ -163,16 +156,16 @@ Set `displayMediumBlogs` to true or false in portofolio.js to display fetched Me
 
 const greeting = {
   /* Your Summary And Greeting Section */
-  title: "Hi all I'm Islam",
-  subTitle: emoji("A passionate Embedded Software  Software Developer 🚀"),
-  resumeLink: "https://drive.google.com/drive folders/1sa5V7hjf66fkZuOpJz1Th2jQNC9WBKOk?usp=sharing"
+  title: "Hi all I'm Dandi",
+  subTitle: emoji("A passionate Software Engineer 🚀"),
+  resumeLink: "https://docs.google.com/document/d/1-Hjjd2DLuQ7uuzL_fi6EorlACtuhohUDttwdKOmm0uU/edit?usp=sharing"
 };
 
 const socialMediaLinks = {
   /* Your Social Media Link */
-  github: "https://github.com/Eslam-Abdo",
-  linkedin: "https://www.linkedin.com/in/Islam-Abdo/",
-  gmail: "eng-islam.abdo1722@alexu.edu.eg",
+  github: "https://github.com/dydanz",
+  linkedin: "https://eg.linkedin.com/in/dandidiputra/",
+  gmail: "dandidiputra@gmail.com",
 };
 
 
@@ -282,7 +275,7 @@ This project is licensed under the GPL-3.0 License - see the [LICENSE.md](./LICE
 
 ## Contributing 💡
 
-If you can help us with these. Please don't hesitate to open an [pull request](https://github.com/aEslam-Abdo/Eslam-Abdo.github.io/pulls) or [issue](https://github.com/Eslam-Abdo/Eslam-Abdo.github.io/issues).
+If you can help us with these. Please don't hesitate to open an [pull request](https://github.com/adydanz/dydanz.github.io/pulls) or [issue](https://github.com/dydanz/dydanz.github.io/issues).
 
 - Move to Gatsby
 - Add Podcast Section and Video Section
