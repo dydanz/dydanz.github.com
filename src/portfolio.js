@@ -21,7 +21,7 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Dandi",
+  username: "Dandi Diputra",
   title: "Hi all, I'm Dandi",
   subTitle: emoji("A passionate Software Engineer 🚀 having an experience of working with Embedded Systems, Real-Time Operating Systems, Telecommunications Core Systems, Financial Technology and Software Engineering Management. Good working knowledge in Go, Java, C/C++, Python and Software Architecture/System Design."),
   resumeLink:
@@ -250,25 +250,7 @@ const achievementSection = {
 // Blogs Section
 
 const blogSection = {
-  title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
-    {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
-    },
-    {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
-  ],
-  display: false // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Talks Sections
