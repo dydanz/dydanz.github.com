@@ -20,6 +20,11 @@
 .blog-header-text {
   font-size: 56px;
   font-weight: 400;
+  color: $titleColor;
+}
+
+.dark-mode .blog-header-text {
+  color: $textColorDark;
 }
 
 .blog-subtitle {
@@ -111,6 +116,10 @@
   color: $titleColor;
 }
 
+.blog-card.dark-mode .blog-card-title {
+  color: $textColorDark;
+}
+
 .blog-card-excerpt {
   font-size: 15px;
   color: $subTitle;
@@ -157,14 +166,26 @@
   }
 
   code {
-    background: $darkBackground;
+    background: $lightBackground3;
     padding: 2px 6px;
     border-radius: 4px;
     font-size: 14px;
+    color: $titleColor;
   }
 
-  &.dark-mode p {
-    color: $textColor;
+  &.dark-mode {
+    h1, h2, h3 {
+      color: $textColorDark;
+    }
+
+    p {
+      color: darken($textColorDark, 15%);
+    }
+
+    code {
+      background: lighten($darkBackground, 8%);
+      color: $textColorDark;
+    }
   }
 }
 
@@ -173,6 +194,10 @@
   font-weight: 700;
   margin-bottom: 8px;
   color: $titleColor;
+}
+
+.dark-mode .blog-post-title {
+  color: $textColorDark;
 }
 
 .blog-post-meta {

@@ -41,34 +41,34 @@ function Header() {
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
             <li>
-              <a href="#skills">Skills</a>
+              <a href="/#skills">Skills</a>
             </li>
           )}
           {viewExperience && (
             <li>
-              <a href="#experience">Work Experiences</a>
+              <a href="/#experience">Work Experiences</a>
             </li>
           )}
           {viewOpenSource && (
             <li>
-              <a href="#opensource">Open Source</a>
+              <a href="/#opensource">Open Source</a>
             </li>
           )}
           {viewAchievement && (
             <li>
-              <a href="#achievements">Achievements</a>
+              <a href="/#achievements">Achievements</a>
             </li>
           )}
           <li>
-            <a href="#blogs">Blog</a>
+            <a href="/#blogs">Blog</a>
           </li>
           {viewTalks && (
             <li>
-              <a href="#talks">Talks</a>
+              <a href="/#talks">Talks</a>
             </li>
           )}
           <li>
-            <a href="#contact">Contact Me</a>
+            <a href="/#contact">Contact Me</a>
           </li>
           <li>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}

@@ -39,6 +39,16 @@ const Main = () => {
     }
   }, []);
 
+  useEffect(() => {
+    if (isShowingSplashAnimation) return;
+    const hash = window.location.hash;
+    if (!hash) return;
+    const el = document.querySelector(hash);
+    if (el) {
+      el.scrollIntoView({behavior: "smooth"});
+    }
+  }, [isShowingSplashAnimation]);
+
   const changeTheme = () => {
     setIsDark(!isDark);
   };
