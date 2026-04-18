@@ -231,9 +231,7 @@ const openSource = {
 const bigProjects = {
   title: "Big Projects",
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
-  projects: [
-    {
-  ],
+  projects: [],
   display: false // Set false to hide this section, defaults to true
 };
 
