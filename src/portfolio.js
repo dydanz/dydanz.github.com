@@ -1,0 +1,411 @@
+/* Change this file to get your personal Portfolio */
+
+// To change portfolio colors globally go to the  _globalColor.scss file
+
+import emoji from "react-easy-emoji";
+import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+
+// Splash Screen
+
+const splashScreen = {
+  enabled: true, // set false to disable splash screen
+  animation: splashAnimation,
+  duration: 2000 // Set animation duration as per your animation
+};
+
+// Summary And Greeting Section
+
+const illustration = {
+  animated: true // Set to false to use static SVG
+};
+
+const greeting = {
+  username: "Dandi",
+  title: "Hi all, I'm Danndi",
+  subTitle: emoji("A passionate Software Engineer 🚀 having an experience of working with Embedded Systems, Real-Time Operating Systems, Telecommunications Core Systems, Financial Technology and Software Engineering Management. Good working knowledge in Go, Java, C/C++, Python and Software Architecture/System Design."),
+  resumeLink:
+    "https://docs.google.com/document/d/1-Hjjd2DLuQ7uuzL_fi6EorlACtuhohUDttwdKOmm0uU/edit?usp=sharing", // Set to empty to hide the button
+  displayGreeting: true // Set false to hide this section, defaults to true
+};
+
+// Social Media Links
+
+const socialMediaLinks = {
+  //   /* Your Social Media Link */
+  github: "https://github.com/dydanzo",
+  linkedin: "https://eg.linkedin.com/in/dandidiputra/",
+  youtube: "hidden",
+  gmail: "hidden",
+  facebook: "hidden",
+  instagram: "hidden",
+  hackerrank: "https://www.hackerrank.com/dandidiputra",
+  kaggle: "hidden",
+  // Instagram, Twitter and Kaggle are also supported in the links!
+  // To customize icons and social links, tweak src/components/SocialMedia
+  display: true // Set true to display this section, defaults to false
+};
+
+// Skills Section
+
+const skillsSection = {
+  title: "What I do",
+  subTitle: "Engineering Leader | Build Scalable Fintech Systems | Software Architect",
+  skills: [
+    emoji("⚡ Building scalable systems"),
+    emoji("⚡ Growing high-performing engineering teams"),
+    emoji("⚡ Contributing to organitaional growth and strategy"),
+    emoji("⚡ Lifelong learner and mentor"),
+  ],
+
+  /* Make Sure to include correct Font Awesome Classname to view your icon
+https://fontawesome.com/icons?d=gallery 
+https://iconify.design/
+*/
+
+  softwareSkills: [
+    {
+      skillName: "Go",
+      classname: "logos:go"
+    },
+    {
+      skillName: "Python",
+      classname: "logos:python"
+    },
+    {
+      skillName: "Java",
+      classname: "logos:java"
+    },
+    {
+      skillName: "C",
+      classname: "logos:c"
+    },
+    {
+      skillName: "C++",
+      classname: "logos:c-plusplus"
+    },
+    {
+      skillName: "Embedded C",
+      classname: "devicon:embeddedc"
+    },
+    {
+      skillName: "Linux",
+      classname: "logos:linux-tux"
+    },
+    {
+      skillName: "Git",
+      classname: "logos:git-icon"
+    },
+    {
+      skillName: "Claude Code",
+      imageSrc: require("./assets/images/claude.svg")
+    },
+    {
+      skillName: "AWS",
+      classname: "logos:aws"
+    },
+    {
+      skillName: "Apache Kafka",
+      classname: "logos:kafka"
+    },
+    {
+      skillName: "Kubernetes",
+      classname: "logos:kubernetes"
+    },
+    {
+      skillName: "Google Cloud",
+      classname: "logos:google-cloud"
+    },
+    {
+      skillName: "Terraform",
+      classname: "logos:terraform-icon"
+    },
+    {
+      skillName: "PostgreSQL",
+      classname: "logos:postgresql"
+    },
+    {
+      skillName: "Redis",
+      classname: "logos:redis"
+    },
+    {
+      skillName: "RabbitMQ",
+      classname: "logos:rabbitmq"
+    },
+    {
+      skillName: "Docker",
+      classname: "logos:docker-icon"
+    }
+  ],
+  display: true // Set false to hide this section, defaults to true
+};
+
+// Education Section
+
+const educationInfo = {
+  display: true, // Set false to hide this section, defaults to true
+  schools: [
+    {
+      schoolName: "Universitas Indonesia",
+      logo: require("./assets/images/makaraui.png"), 
+      subHeader: "Bachelor of Computer Science",
+      duration: "August 2018 - June 2020",
+      desc: "Took courses about Software Engineering, Operating Systems, Information Technology, Business and Communications ...",
+      descBullets: [
+        "Studying Computer Science at Fasilkom UI gave me a strong foundation in core computing concepts—algorithms, data structures, systems, and software engineering. The curriculum is rigorous and pushes you to think analytically and solve problems systematically.",
+      ],
+    }
+  ]
+};
+
+// Your top 3 proficient stacks/tech experience
+
+const techStack = {
+  viewSkillBars: false, //Set it to true to show Proficiency Section
+  experience: [
+    {
+      Stack: "Frontend/Design", //Insert stack or technology you have experience in
+      progressPercentage: "90%" //Insert relative proficiency in percentage
+    },
+    {
+      Stack: "Backend",
+      progressPercentage: "70%"
+    },
+    {
+      Stack: "Programming",
+      progressPercentage: "60%"
+    }
+  ],
+  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+};
+
+// Work experience section
+
+const workExperiences = {
+  display: true, //Set it to true to show workExperiences Section
+  experience: [
+    {
+      role: "Engineering Manager",
+      company: "Electrum",
+      companylogo: require("./assets/images/electrum.png"),
+      date: "JAN 2026 - Now",
+      // location: "Alexandria, Eygpt",
+      desc:
+        "Managing a lean, cross-functional engineering team while remaining deeply hands-on in development. Split time between building production systems, shaping technical architecture, and enabling the team to ship reliable software quickly.",
+    },
+    {
+      role: "Founding Engineer / Head of Engineering",
+      company: "OY! Indonesia",
+      companylogo: require("./assets/images/oy_logo.jpeg"),
+      date: "FEB 2017 - JULY 2024",
+      // location: "Alexandria, Eygpt",
+      desc:
+      "As the founding engineer and head of engineering at OY! Indonesia, I played a pivotal role in building the company's technology from the ground up. I led the development of our core fintech platform, designed scalable systems to handle high transaction volumes, and established best practices for software development. My responsibilities included overseeing the engineering team, collaborating with cross-functional teams to align technical solutions with business goals, and ensuring the delivery of reliable and secure financial services to our customers.",
+    },
+    {
+      role: "Sotware Engineering",
+      company: "Various Companies",
+      companylogo: require("./assets/images/stealth-comp.jpeg"),
+      date: "AUG 2007 - JAM 2017",
+      // location: "Alexandria, Eygpt",
+      desc:
+        "Over the course of a decade, I gained extensive experience in software engineering across various companies and industries. I worked on a wide range of projects, from embedded systems and real-time operating systems to telecommunications core systems and financial technology solutions. My roles involved designing and implementing software architectures, developing applications in multiple programming languages, and collaborating with cross-functional teams to deliver high-quality software products.",
+      descBullets: [
+        "Worked on a real-time operating system for fleet management, optimizing performance and reliability for mission-critical applications.",
+        "Designed and implemented a software architecture for a telecommunications core system.",
+        "Developed a financial technology application that processed millions of transactions daily.",
+      ]
+    }
+  ]
+};
+
+/* Your Open Source Section to View Your Github Pinned Projects
+To know how to get github key look at readme.md */
+
+const openSource = {
+  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
+  display: true // Set false to hide this section, defaults to true
+};
+
+// Some big projects you have worked on
+
+const bigProjects = {
+  title: "Big Projects",
+  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  projects: [
+    {
+      image: require("./assets/images/saayaHealthLogo.webp"),
+      projectName: "Saayahealth",
+      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "http://saayahealth.com/"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/nextuLogo.webp"),
+      projectName: "Nextu",
+      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "http://nextu.se/"
+        }
+      ]
+    }
+  ],
+  display: false // Set false to hide this section, defaults to true
+};
+
+// Achievement Section
+// Include certificates, talks etc
+
+// const achievementSection = {
+//   title: emoji("Achievements And Certifications 🏆 "),
+//   subtitle:
+//     "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+
+//   achievementsCards: [
+//     {
+//       title: "Google Code-In Finalist",
+//       subtitle:
+//         "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
+//       image: require("./assets/images/codeInLogo.webp"),
+//       footerLink: [
+//         {
+//           name: "Certification",
+//           url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+//         },
+//         {
+//           name: "Award Letter",
+//           url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+//         },
+//         {
+//           name: "Google Code-in Blog",
+//           url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+//         }
+//       ]
+//     },
+//     {
+//       title: "Google Assistant Action",
+//       subtitle:
+//         "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
+//       image: require("./assets/images/googleAssistantLogo.webp"),
+//       footerLink: [
+//         {
+//           name: "View Google Assistant Action",
+//           url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+//         }
+//       ]
+//     },
+
+//     {
+//       title: "PWA Web App Developer",
+//       subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
+//       image: require("./assets/images/pwaLogo.webp"),
+//       footerLink: [
+//         {name: "Certification", url: ""},
+//         {
+//           name: "Final Project",
+//           url: "https://pakistan-olx-1.firebaseapp.com/"
+//         }
+//       ]
+//     }
+//   ],
+//   display: false // Set false to hide this section, defaults to true
+// };
+
+// Blogs Section
+
+// const blogSection = {
+//   title: "Blogs",
+//   subtitle:
+//     "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+//   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
+//   blogs: [
+//     {
+//       url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
+//       title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+//       description:
+//         "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+//     },
+//     {
+//       url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
+//       title: "Why REACT is The Best?",
+//       description:
+//         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+//     }
+//   ],
+//   display: false // Set false to hide this section, defaults to true
+// };
+
+// Talks Sections
+
+// const talkSection = {
+//   title: "TALKS",
+//   subtitle: emoji(
+//     "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+//   ),
+
+//   talks: [
+//     {
+//       title: "Build Actions For Google Assistant",
+//       subtitle: "Codelab at GDG DevFest Karachi 2019",
+//       slides_url: "https://bit.ly/saadpasta-slides",
+//       event_url: "https://www.facebook.com/events/2339906106275053/"
+//     }
+//   ],
+//   display: false // Set false to hide this section, defaults to true
+// };
+
+// // Podcast Section
+
+// const podcastSection = {
+//   title: emoji("Podcast 🎙️"),
+//   subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
+
+//   // Please Provide with Your Podcast embeded Link
+//   podcast: [
+//     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
+//   ],
+//   display: false // Set false to hide this section, defaults to true
+// };
+
+const contactInfo = {
+  title: emoji("Contact Me ☎️"),
+  subtitle:
+    "Discuss a project or just want to say hi? My Inbox is open for all.",
+  number: "+62-0000000000",
+  email_address: "hidden"
+};
+
+// Twitter Section
+
+const twitterDetails = {
+  userName: "twitter", //Replace "twitter" with your twitter username without @
+  display: false // Set true to display this section, defaults to false
+};
+
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+
+export {
+  illustration,
+  greeting,
+  socialMediaLinks,
+  splashScreen,
+  skillsSection,
+  educationInfo,
+  techStack,
+  workExperiences,
+  openSource,
+  bigProjects,
+  achievementSection,
+  blogSection,
+  talkSection,
+  podcastSection,
+  contactInfo,
+  twitterDetails,
+  isHireable
+};
