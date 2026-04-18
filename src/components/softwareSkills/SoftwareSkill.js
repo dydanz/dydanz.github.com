@@ -16,7 +16,11 @@ export default function SoftwareSkill() {
                 name={skills.skillName}
               >
                 {skills.imageSrc ? (
-                  <img src={skills.imageSrc} alt={skills.skillName} style={{width: "1em", height: "1em"}} />
+                  <img
+                    src={typeof skills.imageSrc === "object" ? skills.imageSrc.default : skills.imageSrc}
+                    alt={skills.skillName}
+                    style={{width: "1em", height: "1em", verticalAlign: "middle"}}
+                  />
                 ) : (
                   <Icon icon={skills.classname} />
                 )}

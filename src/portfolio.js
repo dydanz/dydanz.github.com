@@ -4,6 +4,7 @@
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import claudeSvg from "./assets/images/claude.svg";
 
 // Splash Screen
 
@@ -21,7 +22,7 @@ const illustration = {
 
 const greeting = {
   username: "Dandi",
-  title: "Hi all, I'm Danndi",
+  title: "Hi all, I'm Dandi",
   subTitle: emoji("A passionate Software Engineer 🚀 having an experience of working with Embedded Systems, Real-Time Operating Systems, Telecommunications Core Systems, Financial Technology and Software Engineering Management. Good working knowledge in Go, Java, C/C++, Python and Software Architecture/System Design."),
   resumeLink:
     "https://docs.google.com/document/d/1-Hjjd2DLuQ7uuzL_fi6EorlACtuhohUDttwdKOmm0uU/edit?usp=sharing", // Set to empty to hide the button
@@ -39,7 +40,6 @@ const socialMediaLinks = {
   facebook: "hidden",
   instagram: "hidden",
   hackerrank: "https://www.hackerrank.com/dandidiputra",
-  kaggle: "hidden",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -49,11 +49,11 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "Engineering Leader | Build Scalable Fintech Systems | Software Architect",
+  subTitle: "Engineering Leader | Build Scalable Systems | Software Architect | Mentor",
   skills: [
     emoji("⚡ Building scalable systems"),
     emoji("⚡ Growing high-performing engineering teams"),
-    emoji("⚡ Contributing to organitaional growth and strategy"),
+    emoji("⚡ Contributing to organisational growth and strategy"),
     emoji("⚡ Lifelong learner and mentor"),
   ],
 
@@ -97,7 +97,7 @@ https://iconify.design/
     },
     {
       skillName: "Claude Code",
-      imageSrc: require("./assets/images/claude.svg")
+      imageSrc: claudeSvg
     },
     {
       skillName: "AWS",
@@ -199,13 +199,13 @@ const workExperiences = {
       date: "FEB 2017 - JULY 2024",
       // location: "Alexandria, Eygpt",
       desc:
-      "As the founding engineer and head of engineering at OY! Indonesia, I played a pivotal role in building the company's technology from the ground up. I led the development of our core fintech platform, designed scalable systems to handle high transaction volumes, and established best practices for software development. My responsibilities included overseeing the engineering team, collaborating with cross-functional teams to align technical solutions with business goals, and ensuring the delivery of reliable and secure financial services to our customers.",
+      "As the Founding Engineer and promoted Head of Engineering at OY! Indonesia, I played a pivotal role in building the company's technology from the ground up. I led the development of our core fintech platform, designed scalable systems to handle high transaction volumes, and established best practices for software development. My responsibilities included overseeing the engineering team, collaborating with cross-functional teams to align technical solutions with business goals, and ensuring the delivery of reliable and secure financial services to our customers.",
     },
     {
       role: "Sotware Engineering",
       company: "Various Companies",
       companylogo: require("./assets/images/stealth-comp.jpeg"),
-      date: "AUG 2007 - JAM 2017",
+      date: "AUG 2007 - JAN 2017",
       // location: "Alexandria, Eygpt",
       desc:
         "Over the course of a decade, I gained extensive experience in software engineering across various companies and industries. I worked on a wide range of projects, from embedded systems and real-time operating systems to telecommunications core systems and financial technology solutions. My roles involved designing and implementing software architectures, developing applications in multiple programming languages, and collaborating with cross-functional teams to deliver high-quality software products.",
@@ -318,7 +318,7 @@ const twitterDetails = {
   display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
