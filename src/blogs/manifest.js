@@ -8,7 +8,7 @@
 // ALWAYS ADD NEW BLOGS (BASED ON DATE) TO THE TOP OF THE LIST
 
 const blogManifest = [
-    {
+  {
     title: "Building NanoClaw a multi-agent AI system that goes from Discord message to GitHub PR — autonomously",
     date: "2026-04-19",
     slug: "building-nanoclaw",
