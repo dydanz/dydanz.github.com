@@ -34,7 +34,7 @@ const greeting = {
 const socialMediaLinks = {
   //   /* Your Social Media Link */
   github: "https://github.com/dydanz",
-  linkedin: "https://eg.linkedin.com/in/dandidiputra/",
+  linkedin: "https://www.linkedin.com/in/dandi-diputra/",
   youtube: "hidden",
   gmail: "hidden",
   facebook: "hidden",
