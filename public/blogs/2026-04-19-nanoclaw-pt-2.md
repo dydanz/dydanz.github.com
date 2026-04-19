@@ -8,8 +8,6 @@ excerpt: "How NanoClaw's PM → Dev → QA pipeline came together — the design
 repo: https://github.com/dydanz/kandangkambing
 ---
 
-### The Architecture: How Three Agents, a JSON File, and Git Worktrees Became a System
-
 *Part 2 of a series on building NanoClaw — the design decisions behind the multi-agent pipeline, and the ones I'd revisit.*
 
 ---
