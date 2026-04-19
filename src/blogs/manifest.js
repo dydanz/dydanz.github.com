@@ -9,6 +9,13 @@
 
 const blogManifest = [
   {
+    title: "The Architecture: How Three Agents, a JSON File, and Git Worktrees Became a System",
+    date: "2026-04-19",
+    slug: "nanoclaw-architecture",
+    excerpt: "How NanoClaw's PM → Dev → QA pipeline came together — the design decisions that worked, the ones I'd redo, and why a flat JSON file was both the best and worst choice I made.",
+    file: "/blogs/2026-04-19-nanoclaw-pt-2.md"
+  },
+  {
     title: "Building NanoClaw a multi-agent AI system that goes from Discord message to GitHub PR — autonomously",
     date: "2026-04-19",
     slug: "building-nanoclaw",

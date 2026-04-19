@@ -181,4 +181,4 @@ Next up: how the architecture came together, what the agents actually are, and t
 
 ---
 
-*Part 1 of 7 — [Next: The Architecture →](02-architecture.md)*
+*Part 1 of 7 — [Next: The Architecture →](/blog/nanoclaw-architecture)*
