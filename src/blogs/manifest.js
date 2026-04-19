@@ -16,10 +16,10 @@ const blogManifest = [
     file: "/blogs/2026-04-19-nanoclaw-pt-2.md"
   },
   {
-    title: "Building NanoClaw a multi-agent AI system that goes from Discord message to GitHub PR — autonomously",
+    title: "I Built a Discord Bot That Writes Code and Opens PRs For Me",
     date: "2026-04-19",
-    slug: "building-nanoclaw",
-    excerpt: "Part 1 - Why I Built a Discord Bot That Writes Code.",
+    slug: "why-i-built-nanoclaw",
+    excerpt: "How a side-project itch turned into a multi-agent AI system that goes from a chat message to a GitHub pull request — without me touching an IDE.",
     file: "/blogs/2026-04-19-nanoclaw-pt-1.md"
   },
   {
