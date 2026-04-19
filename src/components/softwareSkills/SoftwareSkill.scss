@@ -29,3 +29,11 @@
 .software-skill-inline > i:hover ~ p {
   color: $skillsColor;
 }
+
+.dark-mode .software-skill-inline svg,
+.dark-mode .software-skill-inline img {
+  filter:
+    drop-shadow(0 0 3px rgba(255, 255, 255, 0.95))
+    drop-shadow(0 0 3px rgba(255, 255, 255, 0.95))
+    drop-shadow(0 0 3px rgba(255, 255, 255, 0.95));
+}
