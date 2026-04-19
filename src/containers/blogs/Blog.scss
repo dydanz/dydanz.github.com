@@ -81,23 +81,27 @@
 
 /* Blog Cards */
 .blog-card {
-  background: $textColorDark;
+  background-color: $lightBackground2;
   border-radius: 8px;
   padding: 28px 32px;
   cursor: pointer;
-  box-shadow: 0px 10px 30px $darkBoxShadow;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
   gap: 10px;
 
   &:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 20px 40px $lightBoxShadow;
+    box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
   }
 
   &.dark-mode {
-    background: $darkBackground;
+    background-color: $darkBackground;
+
+    &:hover {
+      background-color: $buttonColor;
+      box-shadow: 0px 0px 16px $darkBoxShadow;
+    }
   }
 }
 
@@ -127,10 +131,15 @@
   line-height: 1.6;
 }
 
+.blog-card.dark-mode .blog-card-date,
+.blog-card.dark-mode .blog-card-excerpt {
+  color: $textColorDark;
+}
+
 .blog-card-read {
   font-size: 14px;
   font-weight: 500;
-  color: $buttonColor;
+  color: $subTitle;
   margin-top: 4px;
 }
 

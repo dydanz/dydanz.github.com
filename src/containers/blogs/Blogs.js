@@ -24,7 +24,7 @@ export default function Blogs() {
                 <p className="blog-card-date">{post.date}</p>
                 <h2 className="blog-card-title">{post.title}</h2>
                 <p className="blog-card-excerpt">{post.excerpt}</p>
-                <span className="blog-card-read">Read →</span>
+                <span className="blog-card-read">Read More →</span>
               </div>
             </Link>
           ))}
