@@ -113,10 +113,10 @@ Each concrete implementation handles the quirks of its own API. Anthropic wants 
 
 ```
                        ┌─────────────────────┐
-                       │     LLMRouter        │
+                       │     LLMRouter       │
                        │                     │
                        │  route(messages,    │
-                       │        task_type)    │
+                       │        task_type)   │
                        └──────┬──────────────┘
                               │
               ┌───────────────┼───────────────┐
@@ -126,12 +126,12 @@ Each concrete implementation handles the quirks of its own API. Anthropic wants 
     │ Anthropic   │  │  OpenAI     │  │   Google    │
     │ Provider    │  │  Provider   │  │  Provider   │
     │             │  │             │  │             │
-    │ Claude      │  │ GPT-4o     │  │ Gemini      │
-    │ Sonnet/     │  │ GPT-4o-    │  │ 2.0 Flash   │
-    │ Haiku       │  │ mini       │  │             │
-    └──────┬──────┘  └──────┬──────┘  └──────┬──────┘
-           │               │               │
-           └───────────────┼───────────────┘
+    │ Claude      │  │ GPT-4o      │  │ Gemini      │
+    │ Sonnet/     │  │ GPT-4o-     │  │ 2.0 Flash   │
+    │ Haiku       │  │ mini        │  │             │
+    └──────┬──────┘  └─────┬───────┘  └──────┬──────┘
+           │               │                 │
+           └───────────────┼─────────────────┘
                            │
                            ▼
                     ┌─────────────┐
